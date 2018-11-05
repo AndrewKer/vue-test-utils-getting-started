@@ -12,6 +12,7 @@ describe('Click event', () => {
     })
     wrapper.find('button.yes').trigger('click')
 
-    expect(spy.calledWith('yes'));
+    expect(spy.calledWith('yes')).toBe(true)
+
   })
 })
