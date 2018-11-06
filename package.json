@@ -15,14 +15,16 @@
     "vue-template-compiler": "^2.4.4"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "coverage": "jest --coverage"
   },
   "jest": {
     "transform": {
       "^.+\\.vue$": "vue-jest",
       "^.+\\.html$": "vue-jest",
       "^.+\\.js$": "babel-jest"
-    }
+    },
+    "mapCoverage": true
   },
   "author": "Evan You",
   "license": "MIT"
